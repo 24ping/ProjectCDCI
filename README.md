@@ -17,6 +17,6 @@ In this project, the main idea is to develop a modern CI/CD concept. The idea wi
 This is the first phase where the devopler in the `Dev` branches tries to push his code to the boss repo. However he must follow some steps.
 ## Steps
 - [x] Create `Readme` file or any file.
-- [ ] Install `Pre-commits` check within the IDE.
-- [ ] Push your code to `Dev` branch.
+- [x] Install `Pre-commits` check within the IDE.
+- [x] Push your code to `Dev` branch.
 - [ ] Merge your code with the `main` branch.
