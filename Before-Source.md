@@ -31,11 +31,11 @@ Please refer to [Pre-Commit-Configuration-File](https://github.com/24ping/Projec
 After editing your files, and adding them using the `git add file_name`, The next step is to commit.
 when committing, you will be prompt the following:
 > If there is no file to check:
->![pre-commit-reply-NFF](./pre-commit-NF2C.png)
+>![pre-commit-NFF](./pre-commit-NF2C.png)
 > In case of failure:
->![pre-commit-reply-NFF](./pre-commit-failed-check.png)
-> and finally if successful.
-
+>![pre-commit-failed](./pre-commit-failed-check.png)
+> If successful.
+> ![pre-commit-passed](./pre-commit-passed-check.png)
 
 
 # Pushing the Dev Branch
