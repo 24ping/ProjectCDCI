@@ -1,9 +1,13 @@
-# This is a configuration file that checks all the file for certain conditions before commiting
+# This is a configuration file that checks all the files in this directory
+# for 2 main issues:
+#   - white spaces
+#   - End of file spaces
+#
+# This configuration runs before any commit.
 
-# Removing additional new lines at the end of each file
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
+    -   id: end-of-file-fixer               # Checks for end of files.
+    -   id: trailing-whitespace             # Checks for white spaces.
