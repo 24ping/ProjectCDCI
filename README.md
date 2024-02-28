@@ -15,6 +15,8 @@ In this project, the main idea is to develop a modern CI/CD concept. The idea wi
 # Before-Source stage :computer:
 ## Main idea
 This is the first phase where the developer in the `Dev` branches tries to push his code to the boss repo. However he must follow some steps.
+
+Please refer to [Before-Source-Branch-Documentation](/docs/Branches/Before-Source.md) for more information.
 ## Steps
 - [x] Create `Readme` file or any file.
 - [x] Install `Pre-commits` check within the IDE.
@@ -26,6 +28,8 @@ This is the first phase where the developer in the `Dev` branches tries to push 
 
 ## Main idea
 This is the step where the actual code resides for development following best practices. Moreover, during this phase these were the <a href="## Actions ">actions </a>  implemented and linked to the new branch `source`.
+
+Please refer to [Source-Branch-Documentation](/docs/Branches/Source-Stage.md) for more information.
 
 ## Actions
 - [ ] Create new branch for code development.
