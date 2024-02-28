@@ -12,7 +12,7 @@ In this project, the main idea is to develop a modern CI/CD concept. The idea wi
 - [ ] `Release` stage
 
 
-# Before source stage :computer:
+# Before-Source stage :computer:
 ## Main idea
 This is the first phase where the developer in the `Dev` branches tries to push his code to the boss repo. However he must follow some steps.
 ## Steps
@@ -21,3 +21,18 @@ This is the first phase where the developer in the `Dev` branches tries to push 
 - [x] Push your code to `Dev` branch.
 - [x] Create Branch protection rule
 - [x] Merge your code with the `main` branch.
+
+# Source-Stage:
+
+## Main idea
+This is the step where the actual code resides for development following best practices. Moreover, during this phase these were the <a href="## Actions ">actions </a>  implemented and linked to the new branch `source`.
+
+## Actions
+- [ ] Create new branch for code development.
+- [ ] Initialize a file structure for the code.
+- [ ] Include the project code following OOP best practices.
+- [ ] Implement GitHub Actions
+- [ ] Implement new linting mechanisms
+- [ ] Implement new branch protection rules
+- [ ] Document the actions token for this branch in a `Source-Stage.md`
+- [ ] Merge the `source` branch with the `main` branch
