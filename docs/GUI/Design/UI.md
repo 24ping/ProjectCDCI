@@ -1,5 +1,3 @@
-#
-
 # GUI Design Elements : Main Idea
 - [ ] 3 Main Tabs relating to Y axis
     - [ ]  Home
@@ -19,10 +17,10 @@
 # GUI Design Elements : Details
 
 
-![Home Tab Visual](./home-tab-visual-export-05-03-2024-17_44_04.png)
+![Home Tab Visual](/data/Images/UI/home-tab-visual-export-05-03-2024-17_44_04.png)
 
-![A Tab Visual (A.1)](./a-tab-visual-(a.1)-export-05-03-2024-17_44_04.png)
+![A Tab Visual (A.1)](/data/Images/UI/a-tab-visual-(a.1)-export-05-03-2024-17_44_04.png)
 
-![A Tab Visual (A.2.ex1)](./a-tab-visual-(a.2.ex1)-export-05-03-2024-17_44_04.png)
+![A Tab Visual (A.2.ex1)](/data/Images/UI/a-tab-visual-(a.2.ex1)-export-05-03-2024-17_44_04.png)
 
-![A Tab Visual (A.3.ex1)](./a-tab-visual-(a.3.ex1)-export-05-03-2024-17_44_05.png)
+![A Tab Visual (A.3.ex1)](/data/Images/UI/a-tab-visual-(a.3.ex1)-export-05-03-2024-17_44_05.png)
