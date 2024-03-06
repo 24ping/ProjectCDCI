@@ -1,0 +1,31 @@
+// Define nodes and relationships "A > B"
+
+// Set shape and icon properties in "[]"
+// level 1 and 2
+Functionalities [shape: oval, icon: function] > Function 1 [icon: zap]
+Functionalities > Function 2 [icon: zap]
+Functionalities > Function 3 [icon: zap]
+
+// level 3
+Function 1  > Images [shape: diamond, icon: image]
+Function 2  > Text[shape: diamond, icon: package]
+Function 3  > Colors [shape: diamond, icon: check-square]
+
+// Add labels to relationships after ":"
+// level 4
+Images > Select Image [shape: oval, icon: copy]: Input
+Images > Display Image [shape: diamond, icon: repeat]: Output
+
+Text > New Text[shape: oval, icon: send]: Input
+Text > Default Text [shape: oval, icon: repeat]: Output
+
+Colors > Color Type [shape: diamond, icon: check-square]: Input
+Colors > Default Color[shape: oval, icon: package]: Output
+
+
+// level 5
+Default Text <> New Default Text [shape: diamond]: Output
+New Text > New Default Text [shape: diamond]: Input
+
+Default Color <> New Default Color: Output
+Color Type > New Default Color : Input
