@@ -1,7 +1,9 @@
 # This is a configuration file that checks all the files in this directory
-# for 2 main issues:
-#   - white spaces
-#   - End of file spaces
+# performing static code analysis
+#   - Linting
+#   - Formatting
+#   - Static code vulnerability analysis
+#
 #
 # This configuration runs before any commit.
 
@@ -9,5 +11,30 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
-    -   id: end-of-file-fixer               # Checks for end of files.
-    -   id: trailing-whitespace             # Checks for white spaces.
+    -   id: end-of-file-fixer
+        description: "Checks for end of files."
+
+    -   id: trailing-whitespace
+        description: "Checks for white spaces."
+
+    -   id: check-yaml
+        description: "Checks the Yaml syntax."
+
+    -   id: debug-statements
+        description: "Checks for breaking points"
+
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.4
+    hooks:
+    -   id: ruff
+        description: "fast Python linting"
+
+    -   id: ruff-format
+        description: "fast Python formatting"
+
+
+-   repo: https://github.com/PyCQA/bandit
+    rev: 1.7.8
+    hooks:
+    -   id: bandit
+        description: "scanning common security issues in Python code"
