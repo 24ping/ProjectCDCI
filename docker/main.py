@@ -10,13 +10,8 @@ import numpy as np
 import os
 
 
-user_key = input("Please insert the key\n ")
-current_path = os.path.dirname(os.path.realpath(__file__))
-concept_cicd_dir = os.path.abspath(os.path.join(current_path, os.pardir, os.pardir))
-target_dir = os.path.join(concept_cicd_dir, "data", "Inputs", "text.txt")
-
-file_input = open(target_dir, "r")
-user_text = file_input.read(16)  # making sure we are only taking a block of 16 byte
+def hello():
+    print("hello")
 
 
 def to_ascii(input):
@@ -687,15 +682,23 @@ shiftRows(list_of_col)
 # s_box(list_of_hex)
 
 # to run the whole program
+if __name__ == "__main__":
+    user_key = input("Please insert the key\n ")
+    current_path = os.path.dirname(os.path.realpath(__file__))
+    concept_cicd_dir = os.path.abspath(os.path.join(current_path, os.pardir, os.pardir))
+    target_dir = os.path.join(concept_cicd_dir, "data", "Inputs", "text.txt")
 
-print("the inputed text is:")
-print(user_text)
-first = key_exps(user_text)
-second = key_exps(user_key)
-third = add_Rkey(first, second)
-fourth = s_box(third)
-# i commented this part to see if the problem is only in the 5 part
-# fifth = switch_col(fourth)
-fifth = hexTodec(fourth)
-sixth = shiftRows(fifth)
-final(sixth)
+    file_input = open(target_dir, "r")
+    user_text = file_input.read(16)  # making sure we are only taking a block of 16 byte
+
+    print("the inputed text is:")
+    print(user_text)
+    first = key_exps(user_text)
+    second = key_exps(user_key)
+    third = add_Rkey(first, second)
+    fourth = s_box(third)
+    # i commented this part to see if the problem is only in the 5 part
+    # fifth = switch_col(fourth)
+    fifth = hexTodec(fourth)
+    sixth = shiftRows(fifth)
+    final(sixth)
