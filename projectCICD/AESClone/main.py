@@ -14,6 +14,11 @@ def hello():
     print("hello")
 
 
+def integ_test(arg):
+    print("** integration test **")
+    return arg
+
+
 def to_ascii(input):
     values = [ord(character) for character in input]
     return values
