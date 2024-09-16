@@ -1,0 +1,21 @@
+# this workflow takes an input by the user and prints it out
+# this WF was used to test a template workflow
+# the WF gets triggered manually when run action through github UI
+
+name: Template Based Workflow
+run-name: User `${{ github.actor }}` is running `${{github.action}}` 🚀
+on:
+    workflow_dispatch:
+        inputs:
+            user_text:
+                description: 'Word of your choice!'
+                default: 'None'
+                required: true
+                type: string
+
+jobs:
+    Display-Input:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Printing the `${{ github.actor }}` word
+              run: echo "The word is ${{ inputs.user_text }}"
